@@ -2,7 +2,7 @@
 // https://school.programmers.co.kr/learn/courses/30/lessons/142085
 
 function solution(n, k, enemy) {
-    let row = 0,
+    let low = 0,
         high = enemy.length,
         answer = 0;
 
@@ -24,18 +24,18 @@ function solution(n, k, enemy) {
         return true;
     };
 
-    while (row <= high) {
+    while (low <= high) {
         // 이진탐색 절반
-        const mid = Math.floor((row + high) / 2);
+        const mid = Math.floor((low + high) / 2);
 
         if (search(mid)) {
-            row = mid + 1;
+            low = mid + 1;
         } else {
             high = mid - 1;
         }
     }
 
-    return row - 1;
+    return low - 1;
 }
 
 console.log(solution(7, 3, [4, 2, 4, 5, 3, 3, 1]));
