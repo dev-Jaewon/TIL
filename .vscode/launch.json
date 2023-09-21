@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "study_06",
+            "request": "launch",
+            "mainClass": "study_06",
+            "projectName": "TIL_a72b0758"
+        },
+        {
+            "type": "java",
+            "name": "study_05",
+            "request": "launch",
+            "mainClass": "study_05",
+            "projectName": "TIL_a72b0758"
+        },
+        {
+            "type": "java",
+            "name": "study_04",
+            "request": "launch",
+            "mainClass": "study_04",
+            "projectName": "TIL_a72b0758"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
